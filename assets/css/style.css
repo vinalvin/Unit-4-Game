@@ -1,0 +1,37 @@
+body {
+	margin: 0;
+	background-image: url(../images/crystalball.jpg);
+	 background-size: 1440px 800px;
+	 background-position: cover;
+ 	display: compact;
+}
+h1 {
+    margin: 10px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    opacity: 0.7;
+}
+
+p {
+	font-family: 'Share Tech Mono', monospace;
+	text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+#howToPlay {
+	color: white;
+	margin-top: 20px;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	background: #9fbbd8;
+}
+
+.displayNum {
+	color: rgb(63, 228, 200);
+	background: repeating-radial-gradient(black, transparent 100px);
+}
