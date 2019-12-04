@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CrystalCollector</title>
+    <title>CrystalsCollector Game</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
+
     <div id="container-fluid">
-        <header>
-            <h1>Unit-4 Game</h1>
-        </header>
+        <div class="p-3 mb-2 bg-info text-white">
+            <h1> Crystals Collector</h1>
+        </div>
 
         <div id="howToPlay">
             <p>You will be given a random number at the start of the game.</p>
@@ -25,19 +29,33 @@
         </div>
 
         <div id="diamondImg">
-            <div>Wins: <span id="wins"></span></div>
-            <div>Losses: <span id="losses"></span></div>
-            <div>Total Score: <span id="score"></span></div>
-            <div>Number of Guesses: <span id="guesses"></span></div>
-        </div>
+            <div class="displayNum">
+                <p>Number to guess: <span class="numberToGuess"></span></p>
+                <p>Total score is: <span class="totalScore"></span></p>
+                <p>Wins: <span class="wins"></span></p>
+                <p>Losses: <span class="losses"></span></p>
+            </div>
 
-        <div>
-            <p>I need to add something.</p>
+            <div class="col-sm-12 text-center crystals">
+                <img src="https://lh3.googleusercontent.com/V1phnhdIFxAMij69-4BuBmGHbFico0DzeWdN6Zl8OElsfGRGCx_5GYwNdLswdNKeaWHph_-dpRTfdTWuP4EMvzLafixa3SrZEfEEfaHXgehvB-s3fQXcM74DuwhddDPn2brvqGLnuA=s308-p-k" onclick="play()" class="border border-primary img-responsive"
+                    alt="diamondBlue" data-type="0">
+                <audio id="audio" src="../unit-4-game/assets/audio/fireball.wav"></audio>
+                <img src="https://lh3.googleusercontent.com/Rb7hyTsPFKgXBSmaqVO658QjU1ZKF6xz0TLgimY3ihNx_B-YHXEHWeU7txhSybtAWbhP3Oj-4Jl8FpHj7RCUNHF4MHh3x44PtDO7DTA2fDxCVnOtG07rN9bEVU2iqxnjq8MCV8giZA=s308-p-k" onclick="play()" class="border border-success img-responsive"
+                    alt="diamondGreen" data-type="1">
+                <audio id="audio" src="../unit-4-game/assets/audio/fireball.wav"></audio>
+                <img src="https://lh3.googleusercontent.com/YKHRPXM-7BZfhUvWEzb6MdLCRVFmS9U16J7bWAsCg3E0B_uX0jUjt2rFt8ku17te3YlothpJjmuen63fgh4jIUeh4q3MttLocRlJRwHOisjdv7EyL2VuGdNLzYFFrQZR12soonAi8A=s308-p-k" onclick="play()" class="border border-warning img-responsive"
+                    alt="diamondYellow" data-type="2">
+                <audio id="audio" src="../unit-4-game/assets/audio/fireball.wav"></audio>
+                <img src="https://lh3.googleusercontent.com/bwIYxk7iOHb52EuVHft0KOzmHBNljp0XTgcby8GG_RMwuBsjXXN53ok5W7xHTKdeTJbi9CxR9_rfWUPNYv31hGB8sDkEn_a__3P_tx68-dXzMcfPAFvWw1GFH7qbrtwQWW_McFE5Cw=s308-p-k" onclick="play()" class="border border-secondary img-responsive"
+                    alt="diamondViolet" data-type="3">
+                <audio id="audio" src="../unit-4-game/assets/audio/fireball.wav"></audio>
+            </div>
         </div>
-
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
