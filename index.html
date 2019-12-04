@@ -5,34 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CrystalCollector</title>
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>Unit-4-Game</h1>
+    <div id="container-fluid">
+        <header>
+            <h1>Unit-4 Game</h1>
+        </header>
+
+        <div id="howToPlay">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are you crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
-    </header>
-    <div>
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are you crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+
+        <div id="diamondImg">
+            <div>Wins: <span id="wins"></span></div>
+            <div>Losses: <span id="losses"></span></div>
+            <div>Total Score: <span id="score"></span></div>
+            <div>Number of Guesses: <span id="guesses"></span></div>
+        </div>
+
+        <div>
+            <p>I need to add something.</p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
     </div>
-    <div>
-        <div>Wins: <span id="wins"></span></div>
-        <div>Losses: <span id="losses"></span></div>
-        <div>Total Score: <span id="score"></span></div>
-        <div>Number of Guesses: <span id="guesses"></span></div>
-    </div>
-    <div>
-        <p>I need to add something.</p>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
